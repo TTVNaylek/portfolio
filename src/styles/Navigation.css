@@ -1,0 +1,58 @@
+.navContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em;
+    /* Temporary color */
+    border: 1px solid aliceblue;
+    background-color: aliceblue;
+    border-radius: 20px;
+    width: 50%;
+  }
+  
+  .navContainer > a{
+    color: #212121;
+    text-decoration: none;
+  }
+
+  /*Style for the logos in navbar*/
+    .navActive{
+        transition: transform ease 0.3s;
+        transform: translateY(-15px);
+        /* Temporary color */
+        background-color: aliceblue;
+        border: 4px solid aliceblue;
+        border-radius: 20px;
+    }
+
+  @media screen and (min-width: 768px) {
+    .navContainer{
+      width: 25%;
+    }
+  }
+  
+  @media screen and (min-width:1024px) {
+    .navContainer{
+      width: 20%;
+    }
+  
+    .navContainer > a{
+      transition: transform ease 0.3s;
+    }
+  
+    .navContainer > a:hover{
+      /*box-shadow: 0 0 16px 0 #212121;*/
+      transform: scale(1.2) translateY(-2px);
+    }
+  }
+  
+  @media screen and (min-width:1440px) {
+    .navContainer{
+      width: 15%;
+    }
+  }
+  
+  @media screen and (min-width:2560px) {
+    .navContainer{
+      width: 10%;
+    }
+  }

@@ -1,5 +1,6 @@
 import '../styles/Home.css'
 import Title from './Title.tsx'
+import Nav from './Navigation.tsx'
 
 
 function Home() {
@@ -7,11 +8,7 @@ function Home() {
   return (
     <>
       <Title title="WhoAmI?" subtitle="Naylek_"/>
-      <div className='navContainer'>
-        <a href="#"><i className="fa-solid fa-house"></i></a>
-        <a href="#"><i className="fa-solid fa-hammer"></i></a>
-        <a href="#">???</a>
-      </div>
+      <Nav/>
         <main>
             <h3>Introduction</h3>
             <p>
