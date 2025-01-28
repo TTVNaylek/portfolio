@@ -1,5 +1,5 @@
-import {useLocation} from 'react-router-dom'
-import '../styles/Navigation.css'
+import {Link, useLocation} from 'react-router-dom'
+import './Navigation.css'
   
 
 function Navigation() {
@@ -14,9 +14,9 @@ function Navigation() {
   return (
     <>
       <div className='navContainer'>
-        <a className={isActive('/')} href="#"><i className="fa-solid fa-house"></i></a>
-        <a className={isActive('/projects')} href="#"><i className="fa-solid fa-hammer"></i></a>
-        <a className={isActive('/other')} href="#">???</a>
+        <Link className={isActive('/')} to="/"><i className="fa-solid fa-house"></i></Link>
+        <Link className={isActive('/projects')} to="/projects"><i className="fa-solid fa-hammer"></i></Link>
+        <Link className={isActive('/other')} to="/other">???</Link>
       </div>
     </>
   )

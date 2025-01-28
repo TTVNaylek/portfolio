@@ -1,6 +1,6 @@
-import '../styles/Home.css'
-import Title from './Title.tsx'
-import Nav from './Navigation.tsx'
+import '../styles/Main.css'
+import Title from '../components/Title/Title.tsx'
+import Nav from '../components/Navigation/Navigation.tsx'
 
 
 function Home() {

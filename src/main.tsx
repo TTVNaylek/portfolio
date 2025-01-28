@@ -2,9 +2,10 @@ import {StrictMode} from 'react'
 import {createRoot} from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './index.css'
-import Home from './components/Home.tsx'
-import Footer from "./components/Footer.tsx";
-import Version from "./components/Version.tsx"
+import Home from './pages/Home.tsx'
+import Projects from './pages/Projects.tsx'
+import Footer from "./components/Footer/Footer.tsx";
+import Version from "./components/Version/Version.tsx"
 
 
 createRoot(document.getElementById('root')!).render(
@@ -12,6 +13,7 @@ createRoot(document.getElementById('root')!).render(
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home/>} />
+                <Route path="/projects" element={<Projects/>} />
             </Routes>
         </BrowserRouter>
         <Footer/>

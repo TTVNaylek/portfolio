@@ -1,4 +1,4 @@
-import '../styles/Version.css'
+import './Version.css'
 
 type VersionProps = {
   version: string;

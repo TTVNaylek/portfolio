@@ -1,4 +1,4 @@
-import '../styles/Title.css'
+import './Title.css'
 
 type TitleProps = {
   title: string;
