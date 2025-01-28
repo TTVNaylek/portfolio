@@ -17,6 +17,6 @@ createRoot(document.getElementById('root')!).render(
             </Routes>
         </BrowserRouter>
         <Footer/>
-        <Version version='v0.1'/>
+        <Version version='v0.11'/>
     </StrictMode>,
 )
